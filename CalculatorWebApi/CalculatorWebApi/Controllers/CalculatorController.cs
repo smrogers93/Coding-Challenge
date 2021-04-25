@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace CalculatorWebApi.Controllers
 {
-    
+
     [ApiController]
     [EnableCors("AllowOrigin")]
     [Route("[controller]")]
@@ -42,7 +37,7 @@ namespace CalculatorWebApi.Controllers
 
         [HttpGet]
         [Route("api/calculator/availableoperations")]
-        public List<string> AvailableOperations()
+        public string AvailableOperations()
         {
             var result = _calculator.AvailableOperations();
 

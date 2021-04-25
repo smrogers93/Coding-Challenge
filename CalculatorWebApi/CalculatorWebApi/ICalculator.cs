@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CalculatorWebApi
+﻿namespace CalculatorWebApi
 {
     public interface ICalculator
     {
-        List<string> AvailableOperations();
+        string AvailableOperations();
         int AddOrDivide(string option, int firstNumber, int secondNumber);
     }
 }

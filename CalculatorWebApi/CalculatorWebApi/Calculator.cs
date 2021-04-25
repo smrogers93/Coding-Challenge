@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace CalculatorWebApi
 {
     public class Calculator : ICalculator
@@ -18,9 +15,9 @@ namespace CalculatorWebApi
             }
         }
 
-        public List<string> AvailableOperations()
+        public string AvailableOperations()
         {
-            return new List<string> { "Add Or Divide" };
+            return "Add Or Divide";
         }
     }
 }
