@@ -4,7 +4,9 @@ This project is built with ASP.NET Core 5.0 and Angular 11
 
 # Getting Started
 
-To start the front end application, run the following while in the AngularProject directory: ng serve
+To start the front end application, run the following while in the AngularProject directory: 
+*ng serve*
+
 To start the back end services, open the CalculatorWebApi.sln and select Run Without Debugging from Microsoft Visual Studio. 
 
 # How It Works
